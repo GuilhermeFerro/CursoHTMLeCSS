@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+<!-- min e maxlength serve pra determinar minimo e maximo de caracteres
+required torna o campo obrigatorio
+size diz o tamanho da caixa, mas determina numero maximo de caracteres
+placeholder da uma dica ao usuario do que colocar na caixa
+autocomplete desativa as dicas de digitaçao
+autocomplete no input diz ao autocomplete que tipo de campo é aquele, da pra dizer que é endereço, telefone, sexo, usuario -->
+  <h1>Teste de formulario</h1>
+  <form action="cadastro.php" method="post" autocomplete="on">
+    <p>
+      <label for="iusuario">Usuario: </label>
+      <input type="text" name="usuario" id="iusuario" required minlength="5" maxlength="15" size="8" placeholder="digite seu nome">
+    </p>
+    <p>
+      <label for="isenha">Senha: </label>
+      <input type="password" name="senha" id="isenha" required minlength="7">
+    </p>
+    <p>
+      <input type="submit" value="Enviar">
+      <input type="reset" value="Limpar">
+    </p>
+  </form>
+</body>
+</html>
