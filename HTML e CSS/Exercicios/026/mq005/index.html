@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-query.css">
 </head>
-<body onresize="mudouTamanho()">
+<body>
     <header>
         <h1>Meu site</h1>
         <span id="burger" class="material-symbols-outlined" onclick="clickMenu()">
@@ -33,16 +33,6 @@
         </article>
     </main>
     <script>
-        /* SCRIPT PARA VERIFICAR O TAMANHO DA TELA E MOSTRAR O MENU */
-        function mudouTamanho() {
-            if (window.innerWidth >= 768) {
-                itens.style.display = 'block'
-            } else {
-                itens.style.display = 'none'
-            }
-        }
-
-        /* SCRIPT PARA MOSTRAR O MENU BURGER DE ACORDO COM O TAMANHO DA TELA */
         function clickMenu() {
             if (itens.style.display == 'block') {
                 itens.style.display = 'none'

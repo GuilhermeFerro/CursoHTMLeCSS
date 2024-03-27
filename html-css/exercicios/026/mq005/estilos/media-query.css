@@ -1,0 +1,29 @@
+@charset 'UTF-8';
+
+/* TYPICAL DEVICE BREAKPOINT
+------------------------------------
+Mobile devices – 320px — 480px.
+iPads, Tablets – 481px — 768px.
+Small screens, laptops – 769px — 1024px.
+Desktops, large screens – 1025px — 1200px.
+Extra large screens, TV – 1201px, and more.
+*/
+
+@media screen and (min-width: 768px) {
+    span#burger {
+        display: none;
+    }
+
+    menu {
+        display: block;
+    }
+
+    menu > ul > li {
+        display: inline-block;
+    }
+
+    /* CONFIGURAÇÃO PARA TRAVAR A TELA QUANDO ATINGIR 768PX E O TEXTO NAO FICAR MUITO LARGO. ANTES DE ATINGIR 768, VALE A CONFIG. DO STYLE DE 90VW */
+    main {
+        width: 768px;
+    }
+}
